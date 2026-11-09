@@ -1,0 +1,89 @@
+
+/* General settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2B080F;
+  color: #F0E6DC;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #400D18;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logo h1 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #F0E6DC;
+}
+
+.logo p {
+  font-size: 10px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #F0E6DC;
+  padding: 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background-color: #883F4D;
+}
+
+/* Sidebar footer */
+.sidebar-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #D8C5B8;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.main-content h1 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.main-content p {
+  color: #D8C5B8;
+}
