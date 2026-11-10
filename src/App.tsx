@@ -9,7 +9,10 @@ function App() {
       <aside className="sidebar">
 
         <div className="logo">
-          <h1>FoodieHub</h1>
+          <img
+                src="/src/assets/foodiehub-logo.png"
+                alt="FoodieHub Logo"
+            />
           <p>DISCOVER • COOK • ENJOY</p>
         </div>
 
@@ -27,11 +30,36 @@ function App() {
 
       </aside>
 
+      
       {/* Main Content */}
       <main className="main-content">
-        <h1>Welcome to FoodieHub!</h1>
-        <p>Your favourite place for delicious recipes.</p>
+
+        {/* Welcome Section */}
+        <section className="welcome-section">
+          <h1>Welcome to FoodieHub!</h1>
+          <p>Your favourite place for delicious recipes.</p>
+        </section>
+
+        {/* Hero Section */}
+        <section className="hero-section">
+          <div className="hero-text">
+            <h2>Discover the Joy of Cooking</h2>
+            <p>
+              Explore delicious recipes, discover new flavours,
+              and find inspiration for your next meal.
+            </p>
+            <button className="explore-button">
+              Explore Recipes
+            </button>
+          </div>
+
+          <div className="hero-image">
+            <img src="/src/assets/hero.png" alt="Delicious food" />
+          </div>
+        </section>
+
       </main>
+
 
     </div>
   )
