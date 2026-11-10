@@ -1,5 +1,7 @@
 
 import './App.css'
+import heroImage from './assets/hero-cooking.jpg'
+import aboutImage from './assets/foodiehub-about.jpg'
 
 function App() {
   return (
@@ -36,8 +38,7 @@ function App() {
 
         {/* Welcome Section */}
         <section className="welcome-section">
-          <h1>Welcome to FoodieHub!</h1>
-          <p>Your favourite place for delicious recipes.</p>
+          <h1 className="welcome-title">Welcome to <span>FoodieHub!</span></h1>
         </section>
 
         {/* Hero Section */}
@@ -54,8 +55,38 @@ function App() {
           </div>
 
           <div className="hero-image">
-            <img src="/src/assets/hero.png" alt="Delicious food" />
+            <img src={heroImage} alt="Food Preparation" />
           </div>
+        </section>
+
+
+        {/* Second Card - About FoodieHub */}
+        <section className="hero-section about-section" id="about">
+
+          <div className="hero-text">
+            <h2>Get to Know FoodieHub</h2>
+            <p>
+              Discover what FoodieHub is all about.
+              Learn more about our passion for food,
+              cooking, and sharing delicious recipes.
+            </p>
+
+            <button
+              className="explore-button"
+              onClick={() =>
+                document.getElementById('about')?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }
+            >
+              About Us
+            </button>
+          </div>
+
+          <div className="hero-image">
+            <img src={aboutImage} alt="About FoodieHub" />
+          </div>
+
         </section>
 
       </main>
